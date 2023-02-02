@@ -1,0 +1,126 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "outfit", sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    width: 220px;
+    height: 430px; 
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.card img {
+   width: 100%;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.img-ctn {
+    position: relative;
+}
+
+.img-ctn::after {
+    cursor: pointer;
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s;
+    background-position: center;
+    background-size: cover;
+    background-color: hsl(178, 100%, 50%);
+    background-repeat: no-repeat;
+    background-image: url("icon-view.svg");
+}
+
+.text {
+    color: white;
+}
+
+.text h3 {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.text h3:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.text p{
+    font-size: 13px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+.item-stats {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.item-price {
+    display: flex;
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+    align-items: center;
+}
+.item-price p{
+    padding: 7px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.item-timeleft {
+    display: flex;
+    color: white;
+    font-weight: 400;
+    align-items: center;
+    font-size: 13px;
+}
+.item-timeleft p{
+    padding: 5px;
+    color: hsl(215, 51%, 70%)
+}
+
+hr {
+    color: hsl(215, 32%, 27%)
+}
+
+.author {
+    display: flex;
+    margin-top: -18px;
+}
+
+.author-profile {
+    display: flex;
+    align-items: center;
+}
+
+.author-profile img{
+    width: 25px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+.author-name {
+    padding: 10px;
+    font-size: 15px;
+    color: hsl(215, 51%, 70%)
+}
+
+.author-name span {
+	color: white;
+	cursor: pointer;
+}
+.author-name span:hover {
+    color: hsl(178, 100%, 50%);
+}
